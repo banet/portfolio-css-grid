@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Six+Caps");
+.about-me {
+  width: 99%;
+  margin: 0 auto;
+  max-width: 1200px; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -267,7 +272,7 @@ template {
 
 body {
   color: #a7a7a7;
-  font-family: "Merrieweather", sans-serif;
+  font-family: "Merriweather", sans-serif;
   line-height: 1.6;
   background: #ffffff;
   font-size: .875rem; }
@@ -276,21 +281,101 @@ h1, h2, p {
   margin-top: 0;
   margin-bottom: 1em; }
 
+img {
+  max-width: 100%; }
+
 h1 {
   color: #03afc2;
   line-height: 1;
-  font-size: 3.125em; }
-  h1 span {
-    font-family: "Six Caps", sans-serif;
-    font-size: 5.5rem;
-    letter-spacing: 0.3em;
-    color: #03afc2;
-    line-height: 1;
-    display: block; }
+  font-size: 3.125rem;
+  font-family: "Merriweather", sans-serif; }
 
 h2 {
   font-family: "Six Caps", sans-serif;
   font-size: 2rem;
-  letter-spacing: 0.3em;
-  color: #03afc2;
-  line-height: 1; }
+  letter-spacing: 0.15em;
+  color: #606060;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  font-weight: 400; }
+
+.welcome {
+  background: url(../img/header.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .welcome h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #223843;
+    line-height: 2;
+    text-align: center; }
+    .welcome h1 span {
+      font-family: "Six Caps", sans-serif;
+      font-size: 4.2rem;
+      letter-spacing: 0.3em;
+      color: #03afc2;
+      line-height: 1;
+      letter-spacing: 0.3em;
+      font-weight: 400;
+      display: block;
+      padding-bottom: 1rem; }
+    .welcome h1 small {
+      text-transform: uppercase;
+      letter-spacing: 1.2;
+      font-size: 70%; }
+    .welcome h1::before, .welcome h1::after {
+      content: "";
+      width: 60%;
+      height: 1px;
+      background: #223843;
+      margin: 0 auto 2em;
+      display: block; }
+    .welcome h1::after {
+      margin: 0 auto 2em; }
+    .welcome h1::after {
+      margin: 2em auto 0; }
+
+.intro {
+  display: flex;
+  color: rgba(255, 255, 255, 0.7); }
+  .intro h2 {
+    color: #fff; }
+    .intro h2::after {
+      content: "";
+      width: 20%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5);
+      display: block;
+      margin: 1em auto 0; }
+  @supports (display: grid) {
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr); } }
+
+.intro-middle {
+  background: #223843;
+  padding: 2.5rem 2vw;
+  text-align: center;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.intro-left img,
+.intro-right img {
+  object-fit: cover;
+  min-height: 100%;
+  min-width: 100%;
+  display: block;
+  background: rgba(3, 175, 194, 0.3); }
+
+@supports (display: grid) {
+  .about-me {
+    display: grid;
+    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [name-end] 2fr [port-end]; }
+  .about-img {
+    grid-column: port-start/img-end; } }

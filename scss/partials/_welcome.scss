@@ -1,0 +1,49 @@
+.welcome {
+    background: url(../img/header.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: $fw-n;
+        color:$dark-blue;
+        line-height: 2;
+        text-align: center;
+        
+
+        span {
+            @include sans-serif($fs:4.2rem, $ls: .3em, $color:$accent, $tt: uppercase, $lh:1);
+            display: block;
+            padding-bottom: 1rem;
+        }
+        small {
+            text-transform: uppercase;
+            letter-spacing: 1.2;
+            font-size: 70%;
+        }
+       
+
+        &::before,
+         &::after {
+            content:"";
+            width: 60%;
+            height: 1px;
+            background:$dark-blue;
+            margin: 0 auto 2em;
+            display: block;
+        }
+        &::after {
+            margin:0 auto 2em;  
+        }
+        &::after {
+            margin:2em auto 0;  
+        }
+
+    }
+        
+}

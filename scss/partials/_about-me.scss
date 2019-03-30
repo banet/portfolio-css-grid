@@ -1,0 +1,13 @@
+.about-me {
+    @extend %container;
+}
+
+@supports(display: grid) {
+    .about-me {
+        display: grid;
+        grid-template-columns: [port-start]minmax(6em, 1fr)[name-start] minmax(6em, 1fr) [name-end] 2fr [port-end];
+    }
+    .about-img {
+        grid-column:port-start/img-end;
+    }
+}
