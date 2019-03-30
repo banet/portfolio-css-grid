@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Six+Caps");
-.about-me {
-  width: 99%;
-  margin: 0 auto;
-  max-width: 1200px; }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -373,9 +368,38 @@ h2 {
   display: block;
   background: rgba(3, 175, 194, 0.3); }
 
+.about-me {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 90%;
+  margin-top: 3em; }
+  .about-me::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+@media (min-width: 42em) {
+  .about-img {
+    float: left;
+    margin-right: 1em; } }
+
+.about-title {
+  margin-bottom: .25em; }
+
+.about-subtitle {
+  margin: .5em 0; }
+
 @supports (display: grid) {
   .about-me {
     display: grid;
-    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [name-end] 2fr [port-end]; }
+    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end]; }
   .about-img {
-    grid-column: port-start/img-end; } }
+    grid-column: port-start/img-end;
+    grid-row: 1 / 2; }
+  .about-title {
+    grid-column: name / port;
+    grid-row: 1 / 2;
+    align-self: end; }
+  .about-subtitle,
+  .about-text {
+    grid-column: port / port; } }
