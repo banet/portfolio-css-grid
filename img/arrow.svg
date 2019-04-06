@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="95.359" height="80.196" viewBox="0 0 95.359 80.196">
-  <g id="Group_1" data-name="Group 1" transform="translate(-80.5 -112.652)">
-    <line id="Line_1" data-name="Line 1" x2="95" transform="translate(80.5 152.5)" fill="none" stroke="#fff" stroke-width="1"/>
-    <line id="Line_2" data-name="Line 2" x2="38.5" y2="39.75" transform="translate(137 113)" fill="none" stroke="#fff" stroke-width="1"/>
-    <line id="Line_3" data-name="Line 3" y1="39.75" x2="38.5" transform="translate(137 152.75)" fill="none" stroke="#fff" stroke-width="1"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"/></svg>
